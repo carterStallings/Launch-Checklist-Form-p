@@ -25,10 +25,27 @@ window.addEventListener("load", function() {
          }
       }
       
-      if (validate === true) {
+      if (validate === true && friendNameInput.value === "Keith") {
          faulty.style.visibility = "visible";
-         friendList.innerHTML = `<img src = "./images/IMG_2584.jpg" alt = "Keith" width = '250' height = '250' class="center">`;
+         friendList.innerHTML = `<img src = "./images/IMG_2584.jpg" alt = "Keith" width = '250' height = '250' class="center"> <ol><li>Strength: Politics/Theology</li><li>Weakness: Flatulence</li><li>Favorite Quote: "Allllright guys"</li></ol>`;
          status.innerHTML = "Chief Keef";
+         status.style.color = "red";
+         event.preventDefault();
+      } else if (validate === true && friendNameInput.value === "Luke") {
+         faulty.style.visibility = "visible";
+         friendList.innerHTML = `<img src = "./images/IMG_2585.jpg" alt = "Luke" width = '250' height = '250' class="center"> <ol><li>Strength: Guitar/Joy</li><li>Weakness: Snakes</li><li>Favorite Quote: "No No No turn those lights back on!"</li></ol>`;
+         status.innerHTML = "Lukie Dukie";
+         status.style.color = "red";
+         event.preventDefault();
+      } else if (validate === true && friendNameInput.value === "James") {
+         faulty.style.visibility = "visible";
+         friendList.innerHTML = `<img src = "./images/IMG_123.jpg" alt = "James" width = '250' height = '250' class="center"> <ol><li>Strength: Mergers & Acquisitions/Inspiration</li><li>Weakness: Braums</li><li>Favorite Quote: "Oh my gosh"</li></ol>`;
+         status.innerHTML = "Jamesy";
+         status.style.color = "red";
+         event.preventDefault();
+      } else {
+         faulty.style.visibility = "visible";
+         status.innerHTML = "Not a brother";
          status.style.color = "red";
          event.preventDefault();
       }
