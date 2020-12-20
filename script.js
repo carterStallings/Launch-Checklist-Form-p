@@ -45,6 +45,7 @@ window.addEventListener("load", function() {
          event.preventDefault();
       } else {
          faulty.style.visibility = "visible";
+         friendList.innerHTML = ``;
          status.innerHTML = "Not a brother";
          status.style.color = "red";
          event.preventDefault();
