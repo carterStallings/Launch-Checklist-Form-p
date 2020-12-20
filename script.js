@@ -27,8 +27,8 @@ window.addEventListener("load", function() {
       
       if (validate === true) {
          faulty.style.visibility = "visible";
-         friendList.innerHTML = `${friendNameInput.value} is ready for launch.`;
-         status.innerHTML = "Shuttle not ready for launch";
+         friendList.innerHTML = `<img src = "./images/IMG_2584.jpg" alt = "Keith" width = '250' height = '250' class="center">`;
+         status.innerHTML = "Chief Keef";
          status.style.color = "red";
          event.preventDefault();
       }
