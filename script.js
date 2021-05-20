@@ -25,19 +25,19 @@ window.addEventListener("load", function() {
          }
       }
       
-      if (validate === true && friendNameInput.value === "Keith") {
+      if (validate === true && friendNameInput.value.toLowerCase() === "keith") {
          faulty.style.visibility = "visible";
          friendList.innerHTML = `<img src = "./images/IMG_2584.jpg" alt = "Keith" width = '250' height = '250' class="center"> <ol><li>Strength: Politics/Theology</li><li>Weakness: Flatulence</li><li>Favorite Quote: "Allllright guys"</li></ol>`;
          status.innerHTML = "Chief Keef";
          status.style.color = "red";
          event.preventDefault();
-      } else if (validate === true && friendNameInput.value === "Luke") {
+      } else if (validate === true && friendNameInput.value.toLowerCase() === "luke") {
          faulty.style.visibility = "visible";
          friendList.innerHTML = `<img src = "./images/IMG_2585.jpg" alt = "Luke" width = '250' height = '250' class="center"> <ol><li>Strength: Guitar/Joy</li><li>Weakness: Snakes</li><li>Favorite Quote: "No No No turn those lights back on!"</li></ol>`;
          status.innerHTML = "Lukie Dukie";
          status.style.color = "red";
          event.preventDefault();
-      } else if (validate === true && friendNameInput.value === "James") {
+      } else if (validate === true && friendNameInput.value.toLowerCase() === "james") {
          faulty.style.visibility = "visible";
          friendList.innerHTML = `<img src = "./images/IMG_123.jpg" alt = "James" width = '250' height = '250' class="center"> <ol><li>Strength: Mergers & Acquisitions/Inspiration</li><li>Weakness: Braums</li><li>Favorite Quote: "Oh my gosh"</li></ol>`;
          status.innerHTML = "Jamesy";
